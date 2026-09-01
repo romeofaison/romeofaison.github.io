@@ -27,24 +27,33 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    toggleGrid();
 
 
     // TODO 2 - Create Platforms
-
-
+    // Smaller and higher platforms make the level more challenging.
+createPlatform(100, 600, 250, 25, "lime");
+createPlatform(300, 540, 250, 25, "blue");
+createPlatform(500, 480, 250, 25, "orange");
+createPlatform(700, 420, 250, 25, "pink");
+createPlatform(900, 360, 250, 25, "red");
+createPlatform(1100, 300, 250, 25, "purple");
 
 
     // TODO 3 - Create Collectables
+    // Collectables are placed on different platforms.
+    createCollectable("diamond", 150, 450);
+    createCollectable("steve", 700, 250);
+    createCollectable("max", 1350, 300);
 
 
-
-    
     // TODO 4 - Create Cannons
+    // Faster firing makes the level more challenging.
+    createCannon("left", 300, 1800);
+    createCannon("right", 500, 1800);
+    createCannon("top", 700, 2200);
 
 
-    
-    
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
